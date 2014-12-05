@@ -14,7 +14,7 @@ time <- strptime(paste(power.data[,1], power.data[,2], sep=" "), "%d/%m/%Y %H:%M
 locale <- Sys.getlocale("LC_TIME")
 Sys.setlocale("LC_TIME","English")
 
-png("plot2.png")
+png("plot2.png", 480, 480, bg="transparent")
 plot(time, power.data$Global_active_power, type="l",
      xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()

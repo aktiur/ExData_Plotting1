@@ -14,7 +14,7 @@ time <- strptime(paste(power.data[,1], power.data[,2], sep=" "), "%d/%m/%Y %H:%M
 locale <- Sys.getlocale("LC_TIME")
 Sys.setlocale("LC_TIME","English")
 
-png("plot3.png")
+png("plot3.png", 480, 480, bg="transparent")
 plot(time, power.data$Sub_metering_1, t="l", col = "black",
      xlab = "", ylab="Energy sub metering")
 lines(time, power.data$Sub_metering_2, col="red")

@@ -14,7 +14,7 @@ time <- strptime(paste(power.data[,1], power.data[,2], sep=" "), "%d/%m/%Y %H:%M
 locale <- Sys.getlocale("LC_TIME")
 Sys.setlocale("LC_TIME","English")
 
-png("plot4.png")
+png("plot4.png", 480, 480, bg="transparent")
 
 par(mfrow = c(2,2))
 
